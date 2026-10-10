@@ -1,0 +1,122 @@
+<!DOCTYPE html><html lang="en" data-theme="dark" style="color-scheme: dark;"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Beadology — Happy Bracelets from Peshawar</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#fff7e8;--card:#fff;--ink:#3a2a4d;--mut:#7b6a8f;--pink:#ff5c8a;--yel:#ffc93c;--blu:#3cb6ff;--grn:#2fd18b;--pur:#9b5cff;--line:#f0e2c8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#241a33;--card:#33264a;--ink:#fff3e0;--mut:#c5b5db;--line:#4a3a66}}
+:root[data-theme="dark"]{--bg:#241a33;--card:#33264a;--ink:#fff3e0;--mut:#c5b5db;--line:#4a3a66}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.5 'Fredoka','Trebuchet MS','Comic Sans MS',system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{margin:0;font-weight:700}h2{font-size:28px;text-align:center;margin-bottom:6px}
+button,a.btn{font:inherit;font-weight:600;cursor:pointer;border:0;border-radius:99px;padding:12px 20px;background:var(--pink);color:#fff;text-decoration:none;display:inline-block;box-shadow:0 4px 0 rgba(0,0,0,.18);transition:transform .12s}
+button:active,a.btn:active{transform:translateY(3px);box-shadow:none}
+button.g{background:var(--card);color:var(--ink);border:2px solid var(--line);box-shadow:none}button.b{background:var(--blu)}button.gr,a.gr{background:var(--grn)}button.d{background:#e5484d}
+header{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5;border-bottom:3px dashed var(--line)}
+.logo{font-size:28px;font-weight:700;user-select:none;-webkit-user-select:none;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.logo span:nth-child(5n+1){color:var(--pink)}.logo span:nth-child(5n+2){color:var(--yel)}.logo span:nth-child(5n+3){color:var(--blu)}.logo span:nth-child(5n+4){color:var(--grn)}.logo span:nth-child(5n){color:var(--pur)}
+.hero{position:relative;text-align:center;padding:36px 16px 50px;overflow:hidden;background:linear-gradient(135deg,#ffe29f,#ffa99f 50%,#d8b4ff)}
+.hero h1{font-size:clamp(32px,8vw,52px);color:#3a2a4d;text-shadow:0 3px 0 #fff8}.hero p{color:#4d3a66;max-width:520px;margin:10px auto 18px}
+.bead{position:absolute;border-radius:50%;opacity:.85;animation:fl 6s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-16px) rotate(20deg)}}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px}.chip{background:#fff;color:#3a2a4d;border-radius:99px;padding:6px 14px;font-size:14px;font-weight:600}
+section{max-width:980px;margin:auto;padding:28px 12px}.sub{text-align:center;color:var(--mut);margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px}
+.card{background:var(--card);border:3px solid var(--c);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;position:relative;transition:transform .2s}.card:hover{transform:rotate(-1.5deg) scale(1.02)}
+.card .pic{cursor:pointer}.pic svg,.pic img{width:100%;aspect-ratio:1;display:block;object-fit:cover}
+.card .in{padding:10px 12px 12px;display:flex;flex-direction:column;gap:4px;flex:1}.card small{color:var(--mut);line-height:1.3}
+.price{font-weight:700;font-size:20px;color:var(--c)}.card button{margin-top:auto;background:var(--c);padding:10px}
+.heart{position:absolute;top:8px;right:8px;width:38px;height:38px;padding:0;border-radius:50%;background:#fff;color:#ff5c8a;font-size:20px;box-shadow:0 2px 0 #0002}
+.sold{position:absolute;top:10px;left:-30px;background:#e5484d;color:#fff;transform:rotate(-30deg);padding:2px 36px;font-size:13px;font-weight:700}
+.steps,.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.box{background:var(--card);border:3px solid var(--line);border-radius:22px;padding:16px;text-align:center}.box .e{font-size:40px}
+.sheet{position:fixed;inset:0;background:rgba(40,20,70,.55);display:flex;justify-content:center;align-items:flex-end;z-index:20;animation:fi .2s}
+@keyframes fi{from{opacity:0}}
+.panel{background:var(--bg);width:min(520px,100%);max-height:92%;overflow:auto;border-radius:28px 28px 0 0;padding:18px;padding-bottom:calc(18px + env(safe-area-inset-bottom,0px));animation:up .25s}
+@keyframes up{from{transform:translateY(40px)}}
+.row{display:flex;gap:8px;align-items:center;justify-content:space-between;margin:8px 0}
+input,textarea{width:100%;font:inherit;padding:11px 14px;border-radius:16px;border:3px solid var(--line);background:var(--card);color:var(--ink);margin:4px 0 10px}
+input:focus,textarea:focus{outline:0;border-color:var(--blu)}
+.sz{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 14px}.sz button{background:var(--card);color:var(--ink);border:3px solid var(--line);box-shadow:none;padding:8px 16px}.sz button.on{border-color:var(--pink);background:#ffe1ea;color:#3a2a4d}
+details{background:var(--card);border:3px solid var(--line);border-radius:18px;padding:12px 16px;margin-bottom:10px}summary{font-weight:600;cursor:pointer}
+footer{text-align:center;color:var(--mut);padding:30px 16px;background:linear-gradient(0deg,#ffe29f55,transparent)}footer a{color:var(--pink);font-weight:600}
+#toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:#3a2a4d;color:#fff;padding:12px 22px;border-radius:99px;z-index:50;opacity:0;pointer-events:none;transition:opacity .25s;max-width:90%;text-align:center}#toast.on{opacity:1}
+.cfw{position:fixed;pointer-events:none;z-index:40;font-size:22px;animation:pop .9s ease-out forwards}@keyframes pop{to{transform:translate(var(--x),var(--y)) rotate(360deg);opacity:0}}
+.adm .box{text-align:left;margin-bottom:12px}
+</style></head><body>
+<div id="app"></div><div id="sh"></div><div id="toast" class="">Please fill your name, phone and address 🙂</div>
+<script type="application/json" id="d">{"wa":"923000000000","ph":"+923000000000","h":"12wnhksdq46","products":[{"id":1,"name":"Noor Golden Sun","price":280,"desc":"Shiny golden beads that sparkle like the sun!","img":"","stock":true},{"id":2,"name":"Peshawari Pearl","price":300,"desc":"Soft white pearls, a princess favourite.","img":"","stock":true},{"id":3,"name":"Khyber Twist","price":240,"desc":"Twisty two-colour beads, super playful.","img":"","stock":true},{"id":4,"name":"Gul Rang Flower","price":220,"desc":"Bubblegum-pink beads like a garden of flowers.","img":"","stock":true},{"id":5,"name":"Sitara Star","price":270,"desc":"A tiny star charm on a midnight-blue band.","img":"","stock":true},{"id":6,"name":"Chitral Lake","price":250,"desc":"Cool lake-blue beads from the mountains.","img":"","stock":true},{"id":7,"name":"Mehr Rosy","price":260,"desc":"Rosy, warm and cuddly colours.","img":"","stock":true},{"id":8,"name":"Qissa Stack","price":290,"desc":"Layered earthy beads for a cool stacked look.","img":"","stock":true},{"id":9,"name":"Shaam Sunset","price":230,"desc":"Orange and amber beads like a sunset sky.","img":"","stock":true},{"id":10,"name":"Zarmeena Mint","price":200,"desc":"Fresh minty beads, light and easy to wear.","img":"","stock":true}]}</script>
+<script>
+const D=JSON.parse(document.getElementById('d').textContent);
+const $=s=>document.querySelector(s),esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const COL=['#ffb300','#8a8fa8','#ff7a2f','#ff5c8a','#4b5bd6','#3cb6ff','#e0568a','#a9743f','#ff9f1c','#2fd18b'];
+const PAL=[['#ffc93c','#fff1c1'],['#fffaf0','#e2d6c0'],['#ff7a2f','#3cb6ff'],['#ff5c8a','#ffc2d4'],['#4b5bd6','#ffc93c'],['#3cb6ff','#bfe8ff'],['#f08aa8','#d1527a'],['#a9743f','#e0b98a'],['#ff9f1c','#ffd68a'],['#2fd18b','#c9f5e0']];
+const DEL=150;const SZ=['Kids','Teens','Adults'];let cart={},fav={},view='shop',tap=0,tt;
+try{cart=JSON.parse(localStorage.getItem('bc')||'{}');fav=JSON.parse(localStorage.getItem('bf')||'{}')}catch(e){}
+const store=()=>{try{localStorage.setItem('bc',JSON.stringify(cart));localStorage.setItem('bf',JSON.stringify(fav))}catch(e){}};
+const rs=n=>'Rs '+n,P=id=>D.products.find(x=>x.id==id);
+const count=()=>Object.values(cart).reduce((a,b)=>a+b,0);
+const total=()=>Object.entries(cart).reduce((s,[k,q])=>{const p=P(k.split('|')[0]);return s+(p?p.price*q:0)},0);
+function toast(t){const e=$('#toast');e.textContent=t;e.classList.add('on');clearTimeout(e.t);e.t=setTimeout(()=>e.classList.remove('on'),2200)}
+function boom(el){const r=el.getBoundingClientRect();['⭐','💖','✨','🎉','🌈','💛'].forEach((c,i)=>{const s=document.createElement('span');s.className='cfw';s.textContent=c;s.style.left=r.left+r.width/2+'px';s.style.top=r.top+'px';s.style.setProperty('--x',(Math.random()*160-80)+'px');s.style.setProperty('--y',(-40-Math.random()*90)+'px');document.body.appendChild(s);setTimeout(()=>s.remove(),950)})}
+function art(i){const c=PAL[i%10];let b='';for(let k=0;k<14;k++){const a=k/14*6.283,x=100+64*Math.cos(a),y=100+64*Math.sin(a);b+=`<circle cx="${x}" cy="${y}" r="13" fill="${k%2?c[0]:c[1]}" stroke="#0002" stroke-width="2"/><circle cx="${x-4}" cy="${y-4}" r="4" fill="#fff9"/>`}
+ return`<svg viewBox="0 0 200 200"><rect width="200" height="200" fill="${c[1]}55"/><text x="18" y="34" font-size="22">✨</text><text x="160" y="180" font-size="22">⭐</text><circle cx="100" cy="100" r="64" fill="none" stroke="#0002" stroke-dasharray="3 5"/>${b}</svg>`}
+const pic=(p,i)=>p.img?`<img src="${p.img}" alt="${esc(p.name)}">`:art(i);
+function sheet(h){$('#sh').innerHTML=`<div class="sheet" id="bk"><div class="panel">${h}</div></div>`;$('#bk').onclick=e=>{if(e.target.id==='bk')closeS()}}
+function closeS(){$('#sh').innerHTML='';if(view==='shop')render()}
+function render(){
+ if(view==='admin')return renderAdmin();
+ const bd=[[8,12,38,'#ff5c8a'],[84,8,26,'#3cb6ff'],[14,70,22,'#2fd18b'],[88,64,40,'#ffc93c'],[48,6,18,'#9b5cff']].map((b,i)=>`<i class="bead" style="left:${b[0]}%;top:${b[1]}%;width:${b[2]}px;height:${b[2]}px;background:${b[3]};animation-delay:${i*.7}s"></i>`).join('');
+ $('#app').innerHTML=`<header><div class="logo" id="lg">${[...'Beadology'].map(c=>`<span>${c}</span>`).join('')} 📿</div><button id="cb">🛒 ${count()}</button></header>
+ <div class="hero">${bd}<h1>Happy bracelets<br>for happy wrists! 🌈</h1><p>Colourful handmade bead bracelets from Peshawar. Pick your favourite, tap order, and we bring it to your door!</p><a class="btn" href="#shop">See bracelets 👇</a>
+ <div class="chips"><span class="chip">🖐️ Handmade</span><span class="chip">💰 Rs 200 – 300</span><span class="chip">📍 Only in Peshawar</span><span class="chip">🚚 Delivery Rs 150</span><span class="chip">💵 Pay when it arrives</span></div></div>
+ <section id="shop"><h2>Our 10 bracelets</h2><p class="sub">Tap a picture to see more. Tap 💖 to save your favourites!</p>
+ <div class="grid">${D.products.map((p,i)=>`<div class="card" style="--c:${COL[i%10]}">${p.stock?'':'<span class="sold">SOLD OUT</span>'}<button class="heart" data-h="${p.id}">${fav[p.id]?'💖':'🤍'}</button><div class="pic" data-o="${p.id}">${pic(p,i)}</div><div class="in"><b>${esc(p.name)}</b><small>${esc(p.desc)}</small><span class="price">${rs(p.price)}</span><button data-o="${p.id}" ${p.stock?'':'disabled style="opacity:.5"'}>${p.stock?'Pick me!':'Sold out'}</button></div></div>`).join('')}</div></section>
+ <section><h2>How to order 🎈</h2><p class="sub">Super easy, just 3 steps!</p><div class="steps"><div class="box"><div class="e">👆</div><b>1. Pick</b><br>Choose bracelets and your size.</div><div class="box"><div class="e">📝</div><b>2. Fill</b><br>Type your name, phone and address.</div><div class="box"><div class="e">💬</div><b>3. Send</b><br>Press the green WhatsApp button. We confirm and deliver!</div></div></section>
+ <section><h2>Why you'll love Beadology 💛</h2><p class="sub">&nbsp;</p><div class="why"><div class="box"><div class="e">🌈</div><b>Bright colours</b><br>Every bracelet is bursting with happy colours.</div><div class="box"><div class="e">🧵</div><b>Stretchy &amp; comfy</b><br>Soft elastic thread. It slides on and off easily.</div><div class="box"><div class="e">🎁</div><b>Perfect gift</b><br>Great for birthdays, friends and sisters!</div></div></section>
+ <section><h2>Questions? 🤔</h2><p class="sub">&nbsp;</p><details><summary>Where do you deliver?</summary>For now we deliver only in Peshawar, and delivery costs Rs 150. We will bring Beadology to the rest of Pakistan soon!</details><details><summary>How do I pay?</summary>Cash on delivery. You pay when the bracelet reaches you.</details><details><summary>What size should I pick?</summary>Choose Kids, Teens or Adults. They are stretchy, so there is a little wiggle room. Not sure? Message us on WhatsApp!</details><details><summary>How long does delivery take?</summary>We will tell you the delivery time when we confirm your order on WhatsApp.</details></section>
+ <footer><b>Beadology 📿</b> · Made with love in Peshawar, Pakistan 🇵🇰<br><br><a href="https://wa.me/${esc(D.wa)}" target="_blank">💬 WhatsApp us</a> &nbsp; <a href="tel:${esc(D.ph)}">📞 Call ${esc(D.ph)}</a></footer>`;
+ $('#cb').onclick=cartView;
+ $('#lg').onclick=()=>{tap++;clearTimeout(tt);tt=setTimeout(()=>tap=0,1200);if(tap>=3){tap=0;loginView()}};
+ document.querySelectorAll('[data-o]').forEach(b=>b.onclick=()=>{if(P(b.dataset.o).stock)detail(b.dataset.o)});
+ document.querySelectorAll('[data-h]').forEach(b=>b.onclick=()=>{const i=b.dataset.h;fav[i]=!fav[i];store();b.textContent=fav[i]?'💖':'🤍';if(fav[i])boom(b)});
+}
+function detail(id){const p=P(id),i=D.products.indexOf(p);let sz='Kids',q=1;
+ const draw=()=>{sheet(`<div class="pic" style="border-radius:20px;overflow:hidden;border:3px solid ${COL[i%10]}">${pic(p,i)}</div><h2 style="text-align:left;margin-top:12px">${esc(p.name)}</h2><p style="color:var(--mut);margin:4px 0">${esc(p.desc)}</p><div class="price" style="--c:${COL[i%10]}">${rs(p.price)}</div>
+ <b>Pick your size</b><div class="sz">${SZ.map(s=>`<button class="${s===sz?'on':''}" data-s="${s}">${s}</button>`).join('')}</div>
+ <div class="row"><b>How many?</b><span><button class="g" id="mi">−</button> <b style="margin:0 8px">${q}</b> <button class="g" id="pl">+</button></span></div>
+ <button id="ad" style="width:100%;background:${COL[i%10]}">Add to cart · ${rs(p.price*q)}</button><br><br><button class="g" id="cl" style="width:100%">Keep looking</button>`);
+ document.querySelectorAll('[data-s]').forEach(b=>b.onclick=()=>{sz=b.dataset.s;draw()});$('#mi').onclick=()=>{q=Math.max(1,q-1);draw()};$('#pl').onclick=()=>{q=Math.min(20,q+1);draw()};$('#cl').onclick=closeS;
+ $('#ad').onclick=e=>{const k=p.id+'|'+sz;cart[k]=(cart[k]||0)+q;store();boom(e.target);toast('Added to your cart! 🎉');setTimeout(closeS,500)}};draw()}
+function cartView(){
+ const it=Object.entries(cart).map(([k,q])=>[k,P(k.split('|')[0]),q]).filter(x=>x[1]);
+ sheet(`<div class="row"><h2>🛒 Your cart</h2><button class="g" id="x">Close</button></div>${it.length?it.map(([k,p,q])=>`<div class="row box" style="text-align:left"><span><b>${esc(p.name)}</b><br><small>${k.split('|')[1]} · ${rs(p.price)} × ${q}</small></span><span><button class="g" data-m="${k}">−</button> <button class="g" data-p="${k}">+</button></span></div>`).join('')+`<div class="row"><span>Bracelets</span><span>${rs(total())}</span></div><div class="row"><span>🚚 Delivery (Peshawar)</span><span>${rs(DEL)}</span></div><div class="row"><b style="font-size:22px">Total</b><b style="font-size:22px">${rs(total()+DEL)}</b></div><label>Your name<input id="n" placeholder="e.g. Ayesha"></label><label>Phone number<input id="ph" type="tel" placeholder="03xx xxxxxxx"></label><label>Home address in Peshawar<textarea id="ad" rows="2"></textarea></label><button id="ord" class="gr" style="width:100%">Order now 🎉</button><p style="color:var(--mut);font-size:14px">Delivery in Peshawar is Rs 150. You pay cash when your bracelet arrives.</p>`:'<p style="text-align:center">Your cart is empty. Go pick a happy bracelet! 🌈</p>'}`);
+ $('#x').onclick=closeS;
+ document.querySelectorAll('[data-m]').forEach(b=>b.onclick=()=>{if(--cart[b.dataset.m]<=0)delete cart[b.dataset.m];store();cartView()});
+ document.querySelectorAll('[data-p]').forEach(b=>b.onclick=()=>{cart[b.dataset.p]++;store();cartView()});
+ const o=$('#ord');if(o)o.onclick=()=>{const n=$('#n').value.trim(),ph=$('#ph').value.trim(),ad=$('#ad').value.trim();if(!n||!ph||!ad){toast('Please fill your name, phone and address 🙂');return}
+  const id='BD'+Date.now().toString().slice(-6);
+  const t=`Hello Beadology! New order ${id}\n`+it.map(([k,p,q])=>`${q} x ${p.name} (${k.split('|')[1]}) = ${rs(p.price*q)}`).join('\n')+`\nDelivery: ${rs(DEL)}${String.fromCharCode(10)}Total: ${rs(total()+DEL)}\nName: ${n}\nPhone: ${ph}\nAddress: ${ad}\nPayment: Cash on delivery`;
+  const url='https://wa.me/'+D.wa+'?text='+encodeURIComponent(t);cart={};store();
+  sheet(`<div style="text-align:center"><div style="font-size:60px">🎉</div><h2>Almost done!</h2><p>Your order <b>${id}</b> is ready. Press the green button, then press <b>Send</b> in WhatsApp so we get it.</p><a class="btn gr" href="${url}" target="_blank" rel="noopener" style="width:100%;margin-bottom:12px">💬 Send order on WhatsApp</a><br><a class="btn b" href="tel:${esc(D.ph)}" style="width:100%">📞 Or call us</a><br><br><button class="g" id="dn">Done</button></div>`);$('#dn').onclick=closeS}}
+function hash(s){let a=0xdeadbeef,b=0x41c6ce57;s='bd:'+s;for(let i=0;i<s.length;i++){const c=s.charCodeAt(i);a=Math.imul(a^c,2654435761);b=Math.imul(b^c,1597334677)}a=Math.imul(a^a>>>16,2246822507)^Math.imul(b^b>>>13,3266489909);b=Math.imul(b^b>>>16,2246822507)^Math.imul(a^a>>>13,3266489909);return(4294967296*(2097151&b)+(a>>>0)).toString(36)}
+function loginView(){sheet(`<h2>🔒 Admin</h2><p class="sub">Secret area for the Beadology team.</p><input id="pw" type="password" placeholder="Password"><button id="go" style="width:100%">Open</button>`);setTimeout(()=>{const e=$('#pw');e&&e.focus()},60);
+ const go=()=>{const v=$('#pw').value;if(D.h?hash(v)===D.h:v==='beadology123'){view='admin';$('#sh').innerHTML='';render()}else toast('Wrong password')};$('#go').onclick=go;$('#pw').onkeydown=e=>{if(e.key==='Enter')go()}}
+function renderAdmin(){
+ $('#app').innerHTML=`<header><span class="logo">⚙️ Admin</span><span><button class="g" id="ex">Exit</button> <button id="pb" class="gr">Save &amp; publish</button></span></header>
+ <div class="adm" style="max-width:640px;margin:auto;padding:12px"><div class="box"><b>Contact details</b><label>WhatsApp number (92300…, no + or spaces)<input id="wa" value="${esc(D.wa)}"></label><label>Phone number for calls<input id="pn" value="${esc(D.ph)}"></label><label>New password (leave empty to keep the old one)<input id="pw2" type="password"></label></div>
+ ${D.products.map((p,i)=>`<div class="box" data-i="${i}"><div style="width:100px;border-radius:14px;overflow:hidden">${pic(p,i)}</div><label>Name<input class="n" value="${esc(p.name)}"></label><label>Price (Rs)<input class="pr" type="number" value="${p.price}"></label><label>Description<textarea class="ds" rows="2">${esc(p.desc)}</textarea></label><label>Photo<input class="im" type="file" accept="image/*"></label><label><input class="st" type="checkbox" style="width:auto;margin:0 6px 0 0" ${p.stock?'checked':''}> In stock</label><br><button class="d rm">Delete</button></div>`).join('')}
+ <button id="add" class="b">+ Add new bracelet</button><p style="color:var(--mut);font-size:14px">Changes only go live for customers after you press <b>Save &amp; publish</b>.</p></div>`;
+ $('#ex').onclick=()=>{sync();view='shop';render()};$('#add').onclick=()=>{sync();D.products.push({id:Date.now(),name:'New bracelet',price:250,desc:'',img:'',stock:true});renderAdmin()};
+ let del=null;document.querySelectorAll('.rm').forEach(b=>b.onclick=()=>{if(del!==b){del=b;b.textContent='Tap again to delete';return}sync();D.products.splice(+b.closest('.box').dataset.i,1);renderAdmin()});
+ document.querySelectorAll('.im').forEach(f=>f.onchange=()=>{const file=f.files[0];if(!file)return;sync();const i=+f.closest('.box').dataset.i,im=new Image();im.onload=()=>{const c=document.createElement('canvas');c.width=c.height=500;const x=c.getContext('2d'),s=Math.min(im.width,im.height);x.drawImage(im,(im.width-s)/2,(im.height-s)/2,s,s,0,0,500,500);D.products[i].img=c.toDataURL('image/jpeg',.75);renderAdmin()};im.src=URL.createObjectURL(file)});
+ $('#pb').onclick=pub}
+function sync(){const w=$('#wa');if(!w)return;D.wa=w.value.replace(/\D/g,'')||D.wa;D.ph=$('#pn').value;document.querySelectorAll('.box[data-i]').forEach(b=>{const p=D.products[+b.dataset.i];if(!p)return;p.name=b.querySelector('.n').value;p.price=Math.max(1,+b.querySelector('.pr').value||0);p.desc=b.querySelector('.ds').value;p.stock=b.querySelector('.st').checked})}
+async function pub(){sync();const pw=$('#pw2').value;if(pw)D.h=hash(pw);
+ let a=null;try{a=await claude.use('artifact')}catch(e){}
+ if(!a){toast('Publishing works only when you open this page from your own Claude account');return}
+ const c=document.documentElement.cloneNode(true);c.querySelector('#app').innerHTML='';c.querySelector('#sh').innerHTML='';c.querySelector('#d').textContent=JSON.stringify(D).replace(/</g,'\\u003c');
+ try{await a.publish('<!DOCTYPE html>'+c.outerHTML)}catch(e){toast('Publish failed: '+(e.message||e.code))}}
+render();
+</script>
+</body></html>
